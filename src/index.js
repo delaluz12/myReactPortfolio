@@ -5,6 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 //import css library
+import './index.css'
 
 // importing a component in source folder
 import App from "./App";
