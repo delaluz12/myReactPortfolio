@@ -5,7 +5,7 @@ function Resume () {
 
 
     return (
-       <div>This is Resume Page</div>
+       <div className='topmargin'>This is Resume Page</div>
     )
 
 };
