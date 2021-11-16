@@ -13,6 +13,8 @@ import {
   MDBListGroupItem,
 } from "mdb-react-ui-kit";
 
+import resume from '../publicDocs/RicoMaria_Resume.pdf'
+
 function Resume() {
   return (
     <MDBContainer>
@@ -25,10 +27,11 @@ function Resume() {
             <MDBListGroupItem color="dark" className="text-center">
               Front-end
             </MDBListGroupItem>
-            <MDBListGroupItem>Dapibus ac facilisis in</MDBListGroupItem>
-            <MDBListGroupItem>Morbi leo risus</MDBListGroupItem>
-            <MDBListGroupItem>Porta ac consectetur ac</MDBListGroupItem>
-            <MDBListGroupItem>Vestibulum at eros</MDBListGroupItem>
+            <MDBListGroupItem>HTML & CSS</MDBListGroupItem>
+            <MDBListGroupItem>JavaScript</MDBListGroupItem>
+            <MDBListGroupItem>Responsive Design</MDBListGroupItem>
+            <MDBListGroupItem>React</MDBListGroupItem>
+            <MDBListGroupItem>Bootstrap & MDBootstrap</MDBListGroupItem>
           </MDBListGroup>
         </MDBCol>
         <MDBCol md="6">
@@ -36,22 +39,28 @@ function Resume() {
             <MDBListGroupItem color="dark" className="text-center">
               Back-end
             </MDBListGroupItem>
-            <MDBListGroupItem>Dapibus ac facilisis in</MDBListGroupItem>
-            <MDBListGroupItem>Morbi leo risus</MDBListGroupItem>
-            <MDBListGroupItem>Porta ac consectetur ac</MDBListGroupItem>
-            <MDBListGroupItem>Vestibulum at eros</MDBListGroupItem>
+            <MDBListGroupItem>APIs</MDBListGroupItem>
+            <MDBListGroupItem>Node</MDBListGroupItem>
+            <MDBListGroupItem>Express</MDBListGroupItem>
+            <MDBListGroupItem>MySQL, Sequelize</MDBListGroupItem>
+            <MDBListGroupItem>GraphQL</MDBListGroupItem>
+            <MDBListGroupItem>MongoDB</MDBListGroupItem>
           </MDBListGroup>
         </MDBCol>
         <MDBCol md="6" className="m-4 d-flex justify-content-center">
-          <MDBBtn
+          
+          <h3>Download <a href={resume}>Resume</a></h3>
+          {/* <MDBBtn
             outline
             rounded
+            src='../publicDocs/RicoMaria_Resume.pdf'
             className=" hover-overlay"
             color="info"
+            
             style={{ magin: 0, border: "none" }}
           >
-            <h5 style={{ marginBottom: 0 }}>My Resume</h5>
-            <div
+            <h5 style={{ marginBottom: 0 }} >My Resume</h5>
+            <div 
               className="mask"
               style={{
                 background:
@@ -59,7 +68,7 @@ function Resume() {
                 backgroundSize: "cover",
               }}
             ></div>
-          </MDBBtn>
+          </MDBBtn> */}
         </MDBCol>
       </MDBRow>
     </MDBContainer>
