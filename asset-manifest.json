@@ -1,26 +1,32 @@
 {
   "files": {
     "main.css": "/myReactPortfolio/static/css/main.e49ec5dd.chunk.css",
-    "main.js": "/myReactPortfolio/static/js/main.9da97d77.chunk.js",
-    "main.js.map": "/myReactPortfolio/static/js/main.9da97d77.chunk.js.map",
+    "main.js": "/myReactPortfolio/static/js/main.d79548f4.chunk.js",
+    "main.js.map": "/myReactPortfolio/static/js/main.d79548f4.chunk.js.map",
     "runtime-main.js": "/myReactPortfolio/static/js/runtime-main.f0e2e46d.js",
     "runtime-main.js.map": "/myReactPortfolio/static/js/runtime-main.f0e2e46d.js.map",
     "static/css/2.b933f237.chunk.css": "/myReactPortfolio/static/css/2.b933f237.chunk.css",
-    "static/js/2.b04cb3c0.chunk.js": "/myReactPortfolio/static/js/2.b04cb3c0.chunk.js",
-    "static/js/2.b04cb3c0.chunk.js.map": "/myReactPortfolio/static/js/2.b04cb3c0.chunk.js.map",
+    "static/js/2.fea51c90.chunk.js": "/myReactPortfolio/static/js/2.fea51c90.chunk.js",
+    "static/js/2.fea51c90.chunk.js.map": "/myReactPortfolio/static/js/2.fea51c90.chunk.js.map",
     "index.html": "/myReactPortfolio/index.html",
     "static/css/2.b933f237.chunk.css.map": "/myReactPortfolio/static/css/2.b933f237.chunk.css.map",
     "static/css/main.e49ec5dd.chunk.css.map": "/myReactPortfolio/static/css/main.e49ec5dd.chunk.css.map",
-    "static/js/2.b04cb3c0.chunk.js.LICENSE.txt": "/myReactPortfolio/static/js/2.b04cb3c0.chunk.js.LICENSE.txt",
+    "static/js/2.fea51c90.chunk.js.LICENSE.txt": "/myReactPortfolio/static/js/2.fea51c90.chunk.js.LICENSE.txt",
     "static/media/IMG_3989.de2f5ad4.jpg": "/myReactPortfolio/static/media/IMG_3989.de2f5ad4.jpg",
     "static/media/home.css": "/myReactPortfolio/static/media/_DSC0207.1e589979.jpg",
-    "static/media/headshot.f14b8300.jpg": "/myReactPortfolio/static/media/headshot.f14b8300.jpg"
+    "static/media/actGen.0284bdcd.jpg": "/myReactPortfolio/static/media/actGen.0284bdcd.jpg",
+    "static/media/backend.9cdb9629.jpg": "/myReactPortfolio/static/media/backend.9cdb9629.jpg",
+    "static/media/noteTaker.efc687dc.jpg": "/myReactPortfolio/static/media/noteTaker.efc687dc.jpg",
+    "static/media/planner.435934a6.jpg": "/myReactPortfolio/static/media/planner.435934a6.jpg",
+    "static/media/techBlog.41d84077.jpg": "/myReactPortfolio/static/media/techBlog.41d84077.jpg",
+    "static/media/weather.e317f62f.jpg": "/myReactPortfolio/static/media/weather.e317f62f.jpg",
+    "static/media/welcomNeighbor.f325c6cb.jpg": "/myReactPortfolio/static/media/welcomNeighbor.f325c6cb.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f0e2e46d.js",
     "static/css/2.b933f237.chunk.css",
-    "static/js/2.b04cb3c0.chunk.js",
+    "static/js/2.fea51c90.chunk.js",
     "static/css/main.e49ec5dd.chunk.css",
-    "static/js/main.9da97d77.chunk.js"
+    "static/js/main.d79548f4.chunk.js"
   ]
 }
