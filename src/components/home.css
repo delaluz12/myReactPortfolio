@@ -3,7 +3,7 @@
 
 
 .homeImg {
-    background-image: url("/myReactPortfolio/static/media/_DSC0207.1e589979.jpg");  
+    background-image: url("../images/_DSC0207.jpg");  
     background-size: cover; 
     
 }
