@@ -1,6 +1,13 @@
 import React from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { IconContext } from "react-icons";
+import actgen from '../images/actGen.jpg'
+import backend from '../images/backend.jpg'
+import noteTaker from '../images/noteTaker.jpg'
+import planner from '../images/planner.jpg'
+import techBlog from '../images/techBlog.jpg'
+import weather from '../images/weather.jpg'
+import welcomeNeighbor from '../images/welcomNeighbor.jpg'
 
 import {
   MDBCard,
@@ -15,30 +22,69 @@ import {
   MDBContainer,
 } from "mdb-react-ui-kit";
 
+import Project from './Project'
+
 function Projects() {
   const projects = [
     {
-      name: "projectname",
-      repoLink: "repoURL",
-      description: "short description here",
-      liveLink: "deployedLink",
-      source: "place imported object here...maybe",
+      name: "ActGen",
+      repoLink: "https://github.com/delaluz12/ActGen",
+      description: "A fun activity generating application",
+      liveLink: "https://delaluz12.github.io/ActGen/",
+      image: {actgen},
+      imgName: 'actgen',
+      src: '/myReactPortfolio/static/media/actGen.0284bdcd.jpg'
     },
     {
-      name: "projectname",
-      repoLink: "repoURL",
-      description: "short description here",
-      liveLink: "deployedLink",
-      source: "srcLink",
+      name: "Day Scheduler",
+      repoLink: "https://github.com/delaluz12/eCommerceBackEnd",
+      description: "A simple easy to use backend template for eCommerce database",
+      liveLink: "https://www.youtube.com/watch?v=2PRolV6HDaY&ab_channel=MariaRico",
+      image: {backend},
+      src: '/myReactPortfolio/static/media/backend.9cdb9629.jpg'
+    },
+    {
+      name: "Note Taker",
+      repoLink: "https://github.com/delaluz12/noteTaker",
+      description: "A useful note taking desktop application for record keeping or brainstorming",
+      liveLink: "https://notetaker-delaluz12.herokuapp.com/",
+      image: {noteTaker},
+      src: '/myReactPortfolio/static/media/noteTaker.efc687dc.jpg'
+    },
+    {
+      name: "Day Scheduler",
+      repoLink: "https://github.com/delaluz12/Day-Scheduler",
+      description: "An easy to use daily planner",
+      liveLink: "https://delaluz12.github.io/Day-Scheduler/",
+      image: {planner},
+      src: '/myReactPortfolio/static/media/planner.435934a6.jpg'
+    },
+    {
+      name: "Weather Dashboard",
+      repoLink: "https://github.com/delaluz12/Weather-Dashboard",
+      description: "A useful weather dashboard app for desktop",
+      liveLink: "https://delaluz12.github.io/Weather-Dashboard/",
+      image: {weather},
+      src: '/myReactPortfolio/static/media/weather.e317f62f.jpg'
+    },
+    {
+      name: "Welcome Neighbor",
+      repoLink: "https://github.com/delaluz12/Welcome-Neighbor",
+      description: "A useful Community app for Users to connect with those neighbors in close proximity",
+      liveLink: "https://hello-neighbor.herokuapp.com/",
+      image: {welcomeNeighbor},
+      src: '/myReactPortfolio/static/media/welcomNeighbor.f325c6cb.jpg'
     },
   ];
 
   return (
     <main className="">
-      <MDBContainer fluid className="">
+      <MDBContainer className="mb-5">
         <MDBRow>
+          
           <h1 className="topmargin text-center">My Projects</h1>
-          <MDBCol md="4">
+          <Project projectData={projects}/>
+          {/* <MDBCol md="4">
             <MDBCard className="mb-3">
               <MDBCardImage
                 position="top"
@@ -181,7 +227,7 @@ function Projects() {
                 </MDBCardText>
               </MDBCardBody>
             </MDBCard>
-          </MDBCol>
+          </MDBCol> */}
         </MDBRow>
       </MDBContainer>
     </main>
