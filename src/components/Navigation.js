@@ -19,7 +19,7 @@ function Navigation() {
     <>
       <MDBNavbar expand="lg" className="bg-dark fixed-top">
         <MDBContainer fluid>
-          <MDBNavbarBrand >
+          <MDBNavbarBrand href='/'>
             <img
               src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.png"
               height="30"
