@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import { MDBTypography } from "mdb-react-ui-kit";
 import "./home.css";
 import "../index.css";
