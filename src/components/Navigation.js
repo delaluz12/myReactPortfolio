@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 import {
   MDBContainer,
@@ -8,33 +8,29 @@ import {
   MDBNavbarToggler,
   MDBNavbarNav,
   MDBNavbarItem,
-  
   MDBCollapse,
   MDBIcon,
+  MDBNavbarLink,
 } from "mdb-react-ui-kit";
 
-function Navigation() {
+function Navigation({ currentPage, handlePageChange }) {
   const [showNav, setShowNav] = useState(false);
   return (
     <>
       <MDBNavbar expand="lg" className="bg-dark fixed-top">
         <MDBContainer fluid>
-          <MDBNavbarBrand href='/'>
+          <MDBNavbarBrand
+            href="#Home"
+            onClick={() => handlePageChange("Home")}
+            className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+          >
             <img
               src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.png"
               height="30"
               alt=""
               loading="lazy"
             />
-            {/* <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "text-secondary" : "text-danger"
-              }
-              
-            >
-              Maria De La Luz
-            </NavLink> */}
+            
           </MDBNavbarBrand>
           <MDBNavbarToggler
             type="button"
@@ -44,56 +40,43 @@ function Navigation() {
           >
             <MDBIcon icon="bars" fas />
           </MDBNavbarToggler>
-          <MDBCollapse navbar  show={showNav}  >
-            <MDBNavbarNav   >
-            
+          <MDBCollapse navbar show={showNav}>
+            <MDBNavbarNav>
               <MDBNavbarItem>
-                <NavLink
-                  to="/aboutme"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-secondary nav-link"
-                      : "text-danger nav-link"
-                  }
+                <MDBNavbarLink
+                  href="#About"
+                  onClick={() => handlePageChange('About')}
+                  className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
                 >
                   About Me
-                </NavLink>
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <NavLink
-                  to="/projects"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-secondary nav-link"
-                      : "text-danger nav-link"
-                  }
+                <MDBNavbarLink
+                  href="#Projects"
+                  onClick={() => handlePageChange('Projects')}
+                  className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
                 >
                   Projects
-                </NavLink>
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <NavLink
-                  to="/resume"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-secondary nav-link"
-                      : "text-danger nav-link"
-                  }
+                <MDBNavbarLink
+                  href="#Resume"
+                  onClick={() => handlePageChange('Resume')}
+                  className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
                 >
                   Resume
-                </NavLink>
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "text-secondary nav-link"
-                      : "text-danger nav-link"
-                  }
+                <MDBNavbarLink
+                  href="#Contact"
+                  onClick={() => handlePageChange('Contact')}
+                  className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                 >
                   Contact
-                </NavLink>
+                </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

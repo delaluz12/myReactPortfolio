@@ -8,7 +8,7 @@ import {
   MDBInputGroup,
 } from "mdb-react-ui-kit";
 
-// import "./contact.css"
+
 
 function Contact() {
   return (
@@ -17,7 +17,7 @@ function Contact() {
       <MDBRow className="m-4">
         <MDBCol>
           <form>
-            <MDBInput label="Na" id="typeText" type="text" className="m-2" />
+            <MDBInput label="Name" id="typeText" type="text" className="m-2" />
 
             <MDBInput
               label="Email input"
