@@ -9,7 +9,7 @@ import {
   MDBCol,
   MDBContainer,
 } from "mdb-react-ui-kit";
-import headshot from "../headshot.jpg";
+// import headshot from "../headshot.jpg";
 import headshot2 from "../images/IMG_3989.jpg";
 
 function About() {
