@@ -26,14 +26,15 @@ function Navigation() {
               alt=""
               loading="lazy"
             />
-            <NavLink
+            {/* <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive ? "text-secondary" : "text-danger"
               }
+              
             >
               Maria De La Luz
-            </NavLink>
+            </NavLink> */}
           </MDBNavbarBrand>
           <MDBNavbarToggler
             type="button"
@@ -43,8 +44,9 @@ function Navigation() {
           >
             <MDBIcon icon="bars" fas />
           </MDBNavbarToggler>
-          <MDBCollapse navbar show={showNav} onClick={() => setShowNav(!showNav)}>
-            <MDBNavbarNav>
+          <MDBCollapse navbar  show={showNav}  >
+            <MDBNavbarNav   >
+            
               <MDBNavbarItem>
                 <NavLink
                   to="/aboutme"

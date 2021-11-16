@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../_DSC0207.jpg";
+
 import { MDBTypography } from "mdb-react-ui-kit";
 import "./home.css";
 import "../index.css";
@@ -15,7 +15,7 @@ function Home() {
         <div className="d-flex justify-content-center align-items-center h-100">
           <div className="text-white">
             <MDBTypography className="display-1 pb-3 mb-3 cursive">
-              Hello World!
+              Maria De La Luz
             </MDBTypography>
             {/* <h4 className="mb-3">Subheading</h4>
             <a className="btn btn-outline-light btn-lg" href="#!" role="button">
